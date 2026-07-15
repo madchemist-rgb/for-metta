@@ -10,7 +10,7 @@ if (continueBtn) {
 
     const music = document.getElementById("bgMusic");
 
-    music.volume = 0.25; // 25% volume
+    music.volume = 0.18; // 18% volume
     music.play();
 
     document.getElementById("curiosity").scrollIntoView({
