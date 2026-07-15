@@ -8,11 +8,16 @@ if (continueBtn) {
 
     continueBtn.addEventListener("click", () => {
 
-        document.getElementById("curiosity").scrollIntoView({
-            behavior: "smooth"
-        });
+    const music = document.getElementById("bgMusic");
 
+    music.volume = 0.25; // 25% volume
+    music.play();
+
+    document.getElementById("curiosity").scrollIntoView({
+        behavior: "smooth"
     });
+
+});
 
 }
 
@@ -90,4 +95,22 @@ if (ofCourseBtn) {
     ofCourseBtn.addEventListener("click", showCelebration);
 
 }
+// Music toggle
+const music = document.getElementById("bgMusic");
+const musicToggle = document.getElementById("musicToggle");
 
+musicToggle.addEventListener("click", () => {
+
+    if (music.paused) {
+
+        music.play();
+        musicToggle.textContent = "🔊";
+
+    } else {
+
+        music.pause();
+        musicToggle.textContent = "🔇";
+
+    }
+
+});

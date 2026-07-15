@@ -29,7 +29,53 @@ overflow-x:hidden;
 -webkit-font-smoothing:antialiased;
 
 }
+#musicToggle{
 
+position:fixed;
+
+top:24px;
+
+right:24px;
+
+width:48px;
+
+height:48px;
+
+border:none;
+
+border-radius:50%;
+
+background:#F4B400;
+
+color:white;
+
+font-size:22px;
+display:flex;
+justify-content:center;
+align-items: center;
+cursor:pointer;
+
+z-index:9999;
+box-shadow:0 8px 20px rgba(244,180,0,.30);
+transition:
+     transform .3s ease,
+      box-shadow .3s ease,
+    background .3s ease;
+
+
+}
+#musicToggle:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:0 12px 28px rgba(244,180,0,.45);
+
+}
+#musicToggle:active{
+
+    transform:scale(.95);
+
+}
 .hero{
 
 position:relative;
